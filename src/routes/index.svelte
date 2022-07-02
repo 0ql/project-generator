@@ -7,6 +7,7 @@
   const task: Record<string, string> = {
     backend: "",
     frontend: "",
+    feature: "",
     lang: "",
     db: "",
     app: "",
@@ -19,24 +20,25 @@
   import Column from "src/components/column.svelte";
 </script>
 
-<main class="fixed top-0 h-screen w-screen bg-slate-900 gap-1 grid grid-cols-6">
+<main
+  class="fixed top-0 h-screen w-screen overflow-y-scroll bg-slate-900 gap-1 grid grid-cols-7"
+>
   <button
     on:click={() => {
       $state.spin = !$state.spin;
       firstSpin = true;
     }}
-    class="text-slate-400 text-4xl cursor-pointer bg-slate-800 col-span-3"
+    class="text-slate-400 text-4xl cursor-pointer bg-slate-800 col-span-2"
     >{$state.spin ? "Stop" : "Start"}</button
   >
-  <span
-    class="p-5 text-slate-400 text-4xl cursor-pointer bg-slate-800 col-span-3"
-  >
+  <span class="p-5 text-slate-400 text-3xl bg-slate-800 col-span-5">
     <h3>Your Task</h3>
     {#if !$state.spin && firstSpin}
       <p class="text-justify">
         Use {task.backend} as the backend and {task.frontend} with {task.lang} as
-        your frontend. If you need a database use {task.db}. Create a {task.app}
-        for a {task.for}.
+        your frontend. If you need a database use {task.db}. Implement {task.feature}.
+        Create a {task.app}
+        for (a/an/the) {task.for}.
       </p>
     {/if}
   </span>

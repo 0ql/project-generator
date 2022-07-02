@@ -19,6 +19,16 @@ colmns:
   - vanilla Java
   - Spring
   - ASP.NET
+  - Elm
+
+- name: feature
+  values:
+  - SSR
+  - CSR
+  - Hydration
+  - PWA
+  - Comments
+  - Responsiveness
 
 - name: frontend
   values:
