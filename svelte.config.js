@@ -10,6 +10,9 @@ import ViteYaml from '@modyfi/vite-plugin-yaml';
 /** @type {import('@sveltejs/kit').Config} */ const config = {
   preprocess: preprocess(),
   kit: {
+    prerender: {
+      default: true
+    },
     vite: {
       resolve: {
         alias: {
