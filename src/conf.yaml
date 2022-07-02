@@ -1,0 +1,76 @@
+colmns:
+- name: backend
+  values:
+  - vanilla PHP
+  - Laravel
+  - Drupal
+  - Symphony
+  - vanilla Go
+  - Gin
+  - vanilla Elixir
+  - Phoenix
+  - vanilla Deno
+  - Fresh
+  - vanilla Node
+  - Astro
+  - vanilla Rust
+  - Rocket
+  - Express
+  - vanilla Java
+  - Spring
+  - ASP.NET
+
+- name: frontend
+  values:
+  - vue
+  - svelte
+  - react
+  - preact
+  - dva
+  - solid
+  - angular
+  - malina
+  - lit
+  - marko
+  - mithril
+  - ember
+  - knockout
+  - nuclear
+  - dojo
+  - JQuery
+
+- name: lang
+  values:
+  - javascript
+  - typescript
+  - coffeescript
+
+- name: db
+  values:
+  - SQLite
+  - MySQL / MariaDB
+  - Postgres
+  - Mongo
+  - Firebase
+  - Suprabase
+
+- name: app
+  values:
+  - Blog / News Site
+  - Documentation
+  - Forum
+  - Hompage
+  - Product Page
+
+- name: for
+  values:
+  - amarican politican
+  - Massive investment Bank
+  - Small Family Company
+  - medium size Law firm
+  - tech bro startup
+  - over funded scam startup
+  - massive nonsense urban project in an authoritarian regime
+  - underfunded charity
+  - 2482nd javascript framework
+  - odd tech conference
