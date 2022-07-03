@@ -29,6 +29,7 @@ colmns:
   - PWA
   - Comments
   - Responsiveness
+  - IndexedDB
 
 - name: frontend
   values:
@@ -54,6 +55,7 @@ colmns:
   - javascript
   - typescript
   - coffeescript
+  - rescript
 
 - name: db
   values:
@@ -71,6 +73,8 @@ colmns:
   - Forum
   - Hompage
   - Product Page
+  - Game
+  - Tool
 
 - name: for
   values:
