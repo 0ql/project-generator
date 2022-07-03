@@ -43,7 +43,7 @@
         Use {task.backend} as the backend and {task.frontend} with {task.lang} as
         your frontend. If you need a database use {task.db}. Implement {task.feature}.
         Create a {task.app}
-        for (a/an/the) {task.for}.
+        for {task.for}.
       </p>
     {/if}
   </span>
