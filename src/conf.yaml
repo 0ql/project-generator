@@ -62,7 +62,7 @@ colmns:
   - Postgres
   - Mongo
   - Firebase
-  - Suprabase
+  - Supabase
 
 - name: app
   values:
