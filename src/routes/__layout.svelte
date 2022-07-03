@@ -1,9 +1,7 @@
 <script lang="ts">
   import "uno.css";
-  import Navbar from "src/components/navbar.svelte";
 </script>
 
-<!-- <Navbar /> -->
 <slot />
 
 <style global>
@@ -13,7 +11,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    outline: none;
     border: none;
     color: currentColor;
     display: block;

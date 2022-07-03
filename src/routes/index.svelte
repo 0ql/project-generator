@@ -25,11 +25,16 @@
 >
   <button
     on:click={() => {
-      $state.spin = !$state.spin;
+      if (!$state.spin) {
+        $state.spin = true;
+        setTimeout(() => {
+          $state.spin = false;
+        }, 5000);
+      }
       firstSpin = true;
     }}
-    class="text-slate-400 text-4xl cursor-pointer bg-slate-800 col-span-2"
-    >{$state.spin ? "Stop" : "Start"}</button
+    class="text-slate-400 text-4xl cursor-pointer bg-slate-700 col-span-2"
+    >{$state.spin ? "Spinning..." : "Click here to start the spinner"}</button
   >
   <span class="p-5 text-slate-400 text-3xl bg-slate-800 col-span-5">
     <h3>Your Task</h3>
