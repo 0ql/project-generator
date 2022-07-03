@@ -25,7 +25,7 @@
   <div class="grid py-1 gap-1">
     {#each col.values as val}
       <span class="block bg-slate-800 p-4 rounded-sm"
-        >{val.replace(/(an |a |the )/, "")}</span
+        >{val.replace(/^(an |a |the )/, "")}</span
       >
     {/each}
   </div>
