@@ -58,6 +58,8 @@ colmns:
   - rescript
   - nim
   - haxe
+  - ES3 javascript
+  - ES5 javascript
 
 - name: db
   values:
