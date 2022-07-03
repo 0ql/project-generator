@@ -20,6 +20,7 @@ colmns:
   - Spring
   - ASP.NET
   - Elm
+  - TreeFrog
 
 - name: feature
   values:
@@ -60,6 +61,8 @@ colmns:
   - haxe
   - ES3 javascript
   - ES5 javascript
+  - C to WASM
+  - Cpp to WASM
 
 - name: db
   values:
