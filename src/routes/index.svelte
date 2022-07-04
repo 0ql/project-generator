@@ -1,17 +1,23 @@
 <script context="module" lang="ts">
   import { writable } from "svelte/store";
   import conf from "../conf.yaml";
+
+  export type Project = {
+    name: string;
+    link: string;
+  };
+
   export const state = writable({
     spin: false,
   });
-  const task: Record<string, string> = {
+
+  const task: Record<string, any> = {
     backend: "",
     frontend: "",
     feature: "",
     lang: "",
     db: "",
-    app: "",
-    for: "",
+    project: { name: "", link: "" },
   };
   let firstSpin = false;
 </script>
@@ -21,7 +27,7 @@
 </script>
 
 <main
-  class="fixed top-0 h-screen w-screen overflow-y-scroll bg-slate-900 gap-1 grid grid-cols-7"
+  class="w-screen h-screen overflow-y-scroll bg-slate-900 gap-1 grid grid-cols-6 scrollbar scrollbar-rounded scrollbar-w-0.3rem scrollbar-track-color-transparent scrollbar-thumb-color-slate-500"
 >
   <button
     on:click={() => {
@@ -36,14 +42,16 @@
     class="text-slate-400 text-4xl cursor-pointer bg-slate-700 col-span-2"
     >{$state.spin ? "Spinning..." : "Click here to start the spinner"}</button
   >
-  <span class="p-5 text-slate-400 text-3xl bg-slate-800 col-span-5">
+  <span class="p-5 text-slate-400 text-3xl bg-slate-800 col-span-4">
     <h3>Your Task</h3>
     {#if !$state.spin && firstSpin}
       <p class="text-justify">
         Use {task.backend} as the backend and {task.frontend} with {task.lang} as
         your frontend. If you need a database use {task.db}. Implement {task.feature}.
-        Create a {task.app}
-        for {task.for}.
+        Create
+        <a class="inline-block underline" href={task.project.link}
+          >{task.project.name}</a
+        >.
       </p>
     {/if}
   </span>

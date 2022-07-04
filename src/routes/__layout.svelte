@@ -16,4 +16,11 @@
     display: block;
     font-family: "Finlandica", sans-serif;
   }
+  style,
+  script,
+  meta,
+  link,
+  head {
+    display: none;
+  }
 </style>
