@@ -1,6 +1,7 @@
 declare module '*.yaml' {
   export default conf;
 }
+
 declare module '*.yml' {
   export interface Root {
     colmns: Colmn[];

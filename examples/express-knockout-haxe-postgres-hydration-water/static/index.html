@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Water</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1 data-bind="text: ml"></h1>
+    <h2>ML</h2>
+    <ul>
+      <label>
+        <input type="checkbox" data-bind="checked: check1">
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" data-bind="checked: check2">
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" data-bind="checked: check3">
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" data-bind="checked: check4">
+        <span></span>
+      </label>
+    </ul>
+  </main>
+</body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+  * {
+    display: block;
+    position: relative;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: currentColor;
+    font-family: 'Rubik Moonrocks', cursive;
+  }
+
+  head,
+  style {
+    display: none;
+  }
+
+  body {
+    text-align: center;
+    background: #74b9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 5rem;
+    color: white;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: white;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    position: relative;
+  }
+
+  label span {
+    padding: 3rem 2rem;
+    background-color: white;
+    border-radius: 0.2rem 0.2rem 1rem 1rem;
+    margin: 1rem;
+  }
+
+  label span:hover {
+    cursor: pointer;
+  }
+
+  label input:checked~span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
+    animation: watr 400ms ease-in-out forwards;
+    background-color: #0984e3;
+  }
+
+  @keyframes watr {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 80%;
+    }
+  }
+
+  [type="checkbox"] {
+    display: none;
+  }
+</style>
+
+</html>
