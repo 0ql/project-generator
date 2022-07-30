@@ -9,13 +9,9 @@ declare module '*.yml' {
 
   export interface Colmn {
     name: string;
-    values: Array<Projects | string>;
+    values: Array<string>;
   }
 
-  export interface Projects {
-    name: string;
-    link: string;
-  }
   const value: Root;
   export default value;
 }

@@ -27,7 +27,7 @@
 </script>
 
 <main
-  class="w-screen h-screen overflow-y-scroll bg-slate-900 gap-1 grid grid-cols-6 scrollbar scrollbar-rounded scrollbar-w-0.3rem scrollbar-track-color-transparent scrollbar-thumb-color-slate-500"
+  class="w-screen h-screen overflow-y-scroll bg-slate-900 gap-1 grid grid-cols-5 scrollbar scrollbar-rounded scrollbar-w-0.3rem scrollbar-track-color-transparent scrollbar-thumb-color-slate-500"
 >
   <button
     on:click={() => {
@@ -39,7 +39,7 @@
       }
       firstSpin = true;
     }}
-    class="text-slate-400 text-4xl cursor-pointer bg-slate-700 col-span-2"
+    class="text-slate-400 text-4xl cursor-pointer bg-slate-700 col-span-1"
     >{$state.spin ? "Spinning..." : "Click here to start the spinner"}</button
   >
   <span class="p-5 text-slate-400 text-3xl bg-slate-800 col-span-4">
@@ -48,10 +48,6 @@
       <p class="text-justify">
         Use {task.backend} as the backend and {task.frontend} with {task.lang} as
         your frontend. If you need a database use {task.db}. Implement {task.feature}.
-        Create
-        <a class="inline-block underline" href={task.project.link}
-          >{task.project.name}</a
-        >.
       </p>
     {/if}
   </span>
