@@ -23,7 +23,7 @@
 </script>
 
 <script lang="ts">
-  import Column from "src/components/column.svelte";
+  import Column from "./column.svelte";
 </script>
 
 <main
